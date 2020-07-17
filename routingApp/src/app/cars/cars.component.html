@@ -1,0 +1,15 @@
+<div class="content text-center">
+
+    <p class="title">Car List</p>
+
+    <div *ngFor="let car of cars">
+        <a routerLinkActive="active" [routerLink]="['/cars', car.name]">
+            {{ car.name }}
+        </a>
+    </div>
+
+    <!-- For car detail -->
+    <router-outlet></router-outlet>
+
+</div>
+

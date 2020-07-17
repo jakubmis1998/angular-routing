@@ -1,0 +1,9 @@
+<div *ngIf="car" class="content m-5 text-center">
+    <div class="container">
+        <img [src]="car.logo">
+        <h4 class="title"><strong>{{ car.name }}</strong></h4>
+        <h5>Price: {{ car.price | currency: 'USD' }}</h5>
+        <h5>Description: {{ car.description }}</h5>
+    </div>
+</div>
+
